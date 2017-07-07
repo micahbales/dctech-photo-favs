@@ -54,7 +54,11 @@ get '/flickr' do
 
   @photos = photos_dump.collect do |photo|
     {
-      :photo_body => "<img src='#{photo.url_z}' />",
+      :photo_body => "
+      <h2>#{photo.title}</h2>
+      <img src='#{photo.url_z}' />
+      <p><strong>Faves: #{photo.count_faves}</strong></p>
+      ",
       :photo_faves => photo.count_faves
     }
   end
