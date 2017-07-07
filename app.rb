@@ -24,6 +24,7 @@ get '/' do
   .take(3)
   .collect do |tweet|
     {
+      :retweet_count => tweet.retweet_count,
       :tweet_body => "
       <div style='width: 700px;'>
         @#{tweet.user.screen_name}: #{tweet.to_h[:full_text]} <br />
@@ -35,10 +36,9 @@ get '/' do
 
   end
 
+  # return array of tweet hashes, sorted by retweets
+  @tweets.sort_by! { |tweet| tweet[:retweet_count] }.reverse
+
   erb :index
 
 end
-
-# require 'active_model_serializers'
-# tweet.as_json
-# tweet.entities.media.media_url_https
