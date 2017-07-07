@@ -10,6 +10,8 @@ gem 'dotenv'
 gem 'twitter'
 # provides oauth for ruby
 gem 'oauth'
+# ruby library to access flickr API
+gem 'flickraw'
 
 group :test, :development do
   # reloads the server when changes are made

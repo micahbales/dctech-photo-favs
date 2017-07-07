@@ -12,6 +12,7 @@ GEM
     faraday (0.11.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
+    flickraw (0.9.9)
     http (2.2.2)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -73,6 +74,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   dotenv
+  flickraw
   oauth
   pry
   rerun
