@@ -32,10 +32,11 @@ get '/twitter' do
     {
       :retweet_count => tweet.retweet_count,
       :tweet_body => "
-      <div style='width: 700px;'>
-        @#{tweet.user.screen_name}: #{tweet.to_h[:full_text]} <br />
-        Created At: #{tweet.created_at} || Retweets: #{tweet.retweet_count} <br />
-        <img style='width: 500px;' src='#{tweet.media[0].media_url_https.to_s}' />
+      <div style='width: 700px; margin: 20px 0px 30px 0px;'>
+        <h2>@#{tweet.user.screen_name} at #{tweet.created_at}:</h2>
+        <p>#{tweet.to_h[:full_text]}</p> <br />
+        <img style='width: 500px;' src='#{tweet.media[0].media_url_https.to_s}' /> <br />
+        <p><strong>Retweets: #{tweet.retweet_count}</strong></p>
       </div>
       "
     }

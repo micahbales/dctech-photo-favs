@@ -1,8 +1,9 @@
 <h1>#DCtech Flickr Photos</h1>
-<ul>
+
+<ul style="list-style: none;">
   <% @photos.each do |photo| %>
     <li>
-    <%= photo[:photo_body] %>
+      <%= photo[:photo_body] %>
     </li>
-    <% end %>
+  <% end %>
 </ul>

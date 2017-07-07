@@ -1,6 +1,9 @@
 <h1>#DCtech Photo Tweets</h1>
-<ul>
+
+<ul style="list-style: none;">
   <% @tweets.each do |tweet| %>
-    <li><%= tweet[:tweet_body] %></li>
-    <% end %>
+    <li>
+      <%= tweet[:tweet_body] %>
+    </li>
+  <% end %>
 </ul>
