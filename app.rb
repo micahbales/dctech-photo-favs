@@ -51,7 +51,7 @@ end
 
 get '/flickr' do
 
-  photos_dump = flickr.photos.search :tags => "#DCtech", :extras => "url_z, count_faves"
+  photos_dump = flickr.photos.search :tags => "#DCtech", :min_upload_date => Time.now - 16239599, :extras => "url_z, count_faves, date_upload"
 
   @photos = photos_dump.collect do |photo|
     {
