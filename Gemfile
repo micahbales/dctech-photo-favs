@@ -8,8 +8,6 @@ gem 'bundler'
 gem 'dotenv'
 # lets us interact with twitter's API more easily
 gem 'twitter'
-# provides oauth for ruby
-gem 'oauth'
 # ruby library to access flickr API
 gem 'flickraw'
 

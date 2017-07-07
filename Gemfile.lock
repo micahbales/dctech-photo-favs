@@ -31,7 +31,6 @@ GEM
     method_source (0.8.2)
     multipart-post (2.0.0)
     naught (1.1.0)
-    oauth (0.5.3)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -75,7 +74,6 @@ DEPENDENCIES
   bundler
   dotenv
   flickraw
-  oauth
   pry
   rerun
   sinatra
